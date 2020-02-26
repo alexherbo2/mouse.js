@@ -1,19 +1,41 @@
-# Mouse
+# mouse.js
 
-> An utility to simulate mouse input.
+mouse.js is a JavaScript library to simulate mouse input.
+
+## Installation
+
+Add [`mouse.js`](scripts/mouse.js) to your project.
 
 ## Usage
 
+**Example** – Click a link:
+
 ``` javascript
-const video = document.querySelector('video')
+Mouse.click(link)
+```
+
+**Example** – Open link in new tab:
+
+``` javascript
+Mouse.click(link, { ctrlKey: true })
+```
+
+**Example** – Hover a video:
+
+``` javascript
 Mouse.hover(video)
 ```
 
-More examples at [Krabby].
+**Example** – Same, but infinite:
 
-## References
+``` javascript
+const mouse = new Mouse
 
-- [Create a keyboard interface to the web]
+// Infinite hovering
+mouse.hover(video)
 
-[Krabby]: https://krabby.netlify.com
-[Create a keyboard interface to the web]: https://alexherbo2.github.io/blog/chrome/create-a-keyboard-interface-to-the-web/
+// Stop after 10 seconds
+setTimeout(() => mouse.unhover(video), 10000)
+```
+
+See the [source](scripts/mouse.js) for a complete reference.
