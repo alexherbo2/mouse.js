@@ -4,7 +4,7 @@ mouse.js is a JavaScript library to simulate mouse input.
 
 ## Installation
 
-Add [`mouse.js`](scripts/mouse.js) to your project.
+Add [`mouse.js`](src/mouse.js) to your project.
 
 ## Usage
 
@@ -38,4 +38,4 @@ mouse.hover(video)
 setTimeout(() => mouse.unhover(video), 10000)
 ```
 
-See the [source](scripts/mouse.js) for a complete reference.
+See the [source](src/mouse.js) for a complete reference.
